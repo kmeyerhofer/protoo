@@ -34,4 +34,5 @@ class EnhancedEventEmitter extends EventEmitter
 	}
 }
 
-module.exports = EnhancedEventEmitter;
+// module.exports = EnhancedEventEmitter;
+export default EnhancedEventEmitter;
