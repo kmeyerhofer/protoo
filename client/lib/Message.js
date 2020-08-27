@@ -1,5 +1,7 @@
-const Logger = require('./Logger');
-const { generateRandomNumber } = require('./utils');
+// const Logger = require('./Logger');
+import Logger from './Logger';
+// const { generateRandomNumber } = require('./utils');
+import { generateRandomNumber } from '.utils';
 
 const logger = new Logger('Message');
 
@@ -158,4 +160,5 @@ class Message
 	}
 }
 
-module.exports = Message;
+// module.exports = Message;
+export default Message;

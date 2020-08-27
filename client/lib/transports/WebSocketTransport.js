@@ -1,8 +1,12 @@
 const W3CWebSocket = require('websocket').w3cwebsocket;
-const retry = require('retry');
-const Logger = require('../Logger');
-const EnhancedEventEmitter = require('../EnhancedEventEmitter');
-const Message = require('../Message');
+// const retry = require('retry');
+import retry from 'retry';
+import Logger from '../Logger';
+// const Logger = require('../Logger');
+// const EnhancedEventEmitter = require('../EnhancedEventEmitter');
+import EnhancedEventEmitter from '../EnhancedEventEmitter';
+// const Message = require('../Message');
+import Message from '../Message';
 
 const WS_SUBPROTOCOL = 'protoo';
 const DEFAULT_RETRY_OPTIONS =
@@ -209,4 +213,6 @@ class WebSocketTransport extends EnhancedEventEmitter
 	}
 }
 
-module.exports = WebSocketTransport;
+// module.exports = WebSocketTransport;
+
+export default WebSocketTransport;

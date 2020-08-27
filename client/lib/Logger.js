@@ -1,4 +1,5 @@
-const debug = require('debug');
+// const debug = require('debug');
+import debug from 'debug';
 
 const APP_NAME = 'protoo-client';
 
@@ -42,4 +43,5 @@ class Logger
 	}
 }
 
-module.exports = Logger;
+// module.exports = Logger;
+export default Logger;

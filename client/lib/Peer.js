@@ -1,6 +1,9 @@
-const Logger = require('./Logger');
-const EnhancedEventEmitter = require('./EnhancedEventEmitter');
-const Message = require('./Message');
+// const Logger = require('./Logger');
+import Logger from './Logger';
+// const EnhancedEventEmitter = require('./EnhancedEventEmitter');
+import EnhancedEventEmitter from './EnhancedEventEmitter';
+// const Message = require('./Message');
+import Message from './Message';
 
 const logger = new Logger('Peer');
 
@@ -343,4 +346,5 @@ class Peer extends EnhancedEventEmitter
 	}
 }
 
-module.exports = Peer;
+// module.exports = Peer;
+export default Peer;
